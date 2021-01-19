@@ -180,10 +180,10 @@ const styles = StyleSheet.create({
         height: 50,
         marginBottom: 20,
         alignItems: 'center',
-        backgroundColor: '#3366cc'
+        backgroundColor: '#0040FF'
     },
     buttonText: {
-        paddingTop: 10,
+        paddingTop: 13,
         paddingLeft: 20,
         paddingRight: 20,
         paddingBottom: 20,
@@ -211,9 +211,9 @@ const styles = StyleSheet.create({
     buttonText_coldwallet: {
         padding: 20,
         paddingBottom: 10,
-        paddingTop: 10,
+        paddingTop: 13,
         fontWeight: 'bold',
-        color: '#0033ff',
+        color: '#0040FF',
         fontSize: 18
     },
     touch: {
