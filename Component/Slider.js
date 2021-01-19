@@ -8,7 +8,6 @@ import {
     Image,
     View,
     Text,
-    Modal,
     TouchableOpacity,
 } from 'react-native';
 import { images } from '../assets/Data';
@@ -84,7 +83,7 @@ export default class Slider extends Component {
                     </View>
                     <View>
                         <TouchableOpacity style={styles.cold_wallet} onPress={() => { this.setState({ show: true }); }}>
-                            <Modal
+                            {/* <Modal
                                 transparent={true}
                                 visible={this.state.show}>
                                 <View style={{ backgroundColor: "#000000aa", flex: 1 }}>
@@ -103,7 +102,7 @@ export default class Slider extends Component {
                                         </View>
                                     </View>
                                 </View>
-                            </Modal>
+                            </Modal> */}
                             <View style={styles.button_coldwallet}>
                                 <Text style={styles.buttonText_coldwallet}>Cold Wallet</Text>
                             </View>
@@ -118,6 +117,7 @@ const styles = StyleSheet.create({
     container: {
         paddingTop: 100,
         width,
+        height,
         flex: 2,
     },
     view: {
@@ -163,8 +163,8 @@ const styles = StyleSheet.create({
         marginTop: 15,
     },
     view_slider: {
-        justifyContent: 'flex-end',
-        flexDirection: "row",
+        flexDirection: 'row',
+        justifyContent: 'center'
     },
     button_createaccount: {
         borderRadius: 15,
