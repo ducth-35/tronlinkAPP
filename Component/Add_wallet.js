@@ -2,60 +2,60 @@ import React, { Component } from 'react';
 import { Text, View, StyleSheet, Dimensions, Image } from 'react-native';
 import { ScrollView, TouchableOpacity } from 'react-native-gesture-handler';
 
-class AddWallet extends Component {
+class AddWallet extends React.Component {
     render() {
         return (
-                    <View style={styles.container}>
-                        <ScrollView>
-                            <View>
-                            <Text style={{ color: "black", fontSize: 25, fontWeight: "bold", marginBottom: 10, marginLeft:20, marginTop:20 }}> Import </Text>
-                            <TouchableOpacity >
-                                <View style={styles.button_coldwallet}>
+            <View style={styles.container}>
+                <ScrollView>
+                    <View>
+                        <Text style={{ color: "black", fontSize: 25, fontWeight: "bold", marginBottom: 10, marginLeft: 20, marginTop: 20 }}> Import </Text>
+                        <TouchableOpacity >
+                            <View style={styles.button_coldwallet}>
                                 <Text style={styles.buttonText_coldwallet}>Private key</Text>
                                 <Image
-                                source={{uri: 'https://cdn3.iconfinder.com/data/icons/arrow-outline-8/32/right-256.png'}}
-                                style={{width:20, height:20, marginTop:20}}/>
+                                    source={{ uri: 'https://cdn3.iconfinder.com/data/icons/arrow-outline-8/32/right-256.png' }}
+                                    style={{ width: 20, height: 20, marginTop: 20 }} />
                             </View>
-                            </TouchableOpacity>
-                            <TouchableOpacity >
-                                  <View style={styles.button_coldwallet}>
+                        </TouchableOpacity>
+                        <TouchableOpacity >
+                            <View style={styles.button_coldwallet}>
                                 <Text style={styles.buttonText_coldwallet}>Mnemonic</Text>
                                 <Image
-                                source={{uri: 'https://cdn3.iconfinder.com/data/icons/arrow-outline-8/32/right-256.png'}}
-                                style={{width:20, height:20, marginTop:20}}/>
+                                    source={{ uri: 'https://cdn3.iconfinder.com/data/icons/arrow-outline-8/32/right-256.png' }}
+                                    style={{ width: 20, height: 20, marginTop: 20 }} />
                             </View>
-                            </TouchableOpacity>
-                            <TouchableOpacity >
-                                  <View style={styles.button_coldwallet}>
+                        </TouchableOpacity>
+                        <TouchableOpacity >
+                            <View style={styles.button_coldwallet}>
                                 <Text style={styles.buttonText_coldwallet}>Keystore</Text>
                                 <Image
-                                source={{uri: 'https://cdn3.iconfinder.com/data/icons/arrow-outline-8/32/right-256.png'}}
-                                style={{width:20, height:20, marginTop:20}}/>
+                                    source={{ uri: 'https://cdn3.iconfinder.com/data/icons/arrow-outline-8/32/right-256.png' }}
+                                    style={{ width: 20, height: 20, marginTop: 20 }} />
                             </View>
-                            </TouchableOpacity>
-                            <TouchableOpacity >
-                                  <View style={styles.button_coldwallet}>
+                        </TouchableOpacity>
+                        <TouchableOpacity >
+                            <View style={styles.button_coldwallet}>
                                 <Text style={styles.buttonText_coldwallet}>Watch wallet</Text>
                                 <Image
-                                source={{uri: 'https://cdn3.iconfinder.com/data/icons/arrow-outline-8/32/right-256.png'}}
-                                style={{width:20, height:20, marginTop:20}}/>
+                                    source={{ uri: 'https://cdn3.iconfinder.com/data/icons/arrow-outline-8/32/right-256.png' }}
+                                    style={{ width: 20, height: 20, marginTop: 20 }} />
                             </View>
-                            </TouchableOpacity>
-                            <Text style={{ color: "black", fontSize: 25, fontWeight: "bold", marginBottom: 10, marginLeft:20 }}> Create </Text>        
-                            <TouchableOpacity >
-                                  <View style={styles.button_coldwallet}>
+                        </TouchableOpacity>
+                        <Text style={{ color: "black", fontSize: 25, fontWeight: "bold", marginBottom: 10, marginLeft: 20 }}> Create </Text>
+                        <TouchableOpacity >
+                            <View style={styles.button_coldwallet}>
                                 <Text style={styles.buttonText_coldwallet}>Create Wallet</Text>
                                 <Image
-                                source={{uri: 'https://cdn3.iconfinder.com/data/icons/arrow-outline-8/32/right-256.png'}}
-                                style={{width:20, height:20, marginTop:20}}/>
+                                    source={{ uri: 'https://cdn3.iconfinder.com/data/icons/arrow-outline-8/32/right-256.png' }}
+                                    style={{ width: 20, height: 20, marginTop: 20 }} />
                             </View>
-                            </TouchableOpacity>
-                            </View>
-                            <View>
-                            <Text style={{ color: "#0066ff", fontSize: 10, textAlign: "center", justifyContent: "flex-end", marginTop: 280 }}> How to recover from wallet data file ?</Text>
-                            </View>
-                        </ScrollView>
+                        </TouchableOpacity>
                     </View>
+                    <View>
+                        <Text style={{ color: "#0066ff", fontSize: 10, textAlign: "center", justifyContent: "flex-end", marginTop: 280 }}> How to recover from wallet data file ?</Text>
+                    </View>
+                </ScrollView>
+            </View>
         );
     }
 }
@@ -99,10 +99,10 @@ const styles = StyleSheet.create({
         marginBottom: 15,
         backgroundColor: '#fff',
         shadowColor: '#bdbdbd',
-        shadowOpacity:1,
-        shadowOffset:{
-            width:3,
-            height:3
+        shadowOpacity: 1,
+        shadowOffset: {
+            width: 3,
+            height: 3
         }
     },
     buttonText_coldwallet: {
